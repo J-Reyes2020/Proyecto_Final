@@ -27,7 +27,7 @@ var edad = prompt("¿Cuantos años tiene? Ingrese solamente números ")
 if(edad<=17){
     alert("Usted no es mayor de Edad")
   }else{
-    var casado = prompt("¿Está casado actualmente?", "si/no")
+      var casado = prompt("¿Está casado actualmente?", "si/no")
     //Comprobamos la edad del cónyuge, solamente si se está casado/a
     var edad_conyuge
     if("SI" == casado.toUpperCase()){
@@ -47,7 +47,7 @@ if(edad<=17){
     /**
      * 1. convierta la cantidad de hijos a numero
      */
-    if("si"==hijos.toUpperCase()){
+    if("SI"==hijos.toUpperCase()){
       cantidad_hijos=prompt("Cuántos hijos tiene?")
     }
     var edad_hijo = parseInt(cantidad_hijos)
@@ -98,7 +98,7 @@ if(edad<=17){
   var total_por_hijos = hijos_recargo * precio_base;
 
 
-  precio_final = precio_base + recargo_total + total_por_hijos;
+  precio_final = precio_base + recargo_total + (total_por_hijos*);
   //Resultado
   alert ("Para el asegurado "+nombre)
   alert ("El recargo total sera de: "+recargo_total)
